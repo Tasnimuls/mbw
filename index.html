@@ -1,74 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your New Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        * { margin: 0; padding: 0; }
-
-        html, body {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        canvas {
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        #app {
-            z-index: 2;
-            color: white;
-            text-align: center;
-            animation: fadeInUp 1.5s ease-in-out; /* Add entrance animation */
-        }
-
-        h1 {
-            font-size: 3em; /* Make the text larger */
-            background: linear-gradient(to right, rgb(180, 129, 180), rgb(109, 243, 32), rgb(255, 119, 187), green, yellow, orange, red);
-            -webkit-background-clip: text;
-            color: transparent;
-            display: inline-block;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Responsive Page</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <canvas id="fireworksCanvas"></canvas>
+    <div class="content">
+      <button id="pressButton" class="button">ক্লিক করুন</button>
+    </div>
+  </div>
 
-<!-- Canvas for Particle Animation -->
-<canvas id="test"></canvas>
-
-<!-- Your Content -->
-<div id="app">
-    <h1>Wishing you a day filled with love, laughter, and unforgettable moments on your special day! Happy Birthday!</h1>
-    <!-- Add more content as needed -->
-</div>
-
-<!-- Scripts -->
-<script src="main.js"></script>
-<script>
-    // Ensure the following line is included to initialize the animation
-    create();
-    particles();
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
